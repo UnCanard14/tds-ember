@@ -1,40 +1,36 @@
 import Controller from '@ember/controller';
-import {action} from '@ember/object';
-import {tracked} from "@glimmer/tracking";
+import { action } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
 
 export default class Ex1Controller extends Controller {
   MAX = 100;
-  @tracked content = "Default";
-  @tracked info = "";
+  @tracked content = 'Default';
+  @tracked info = '';
 
-  get style(){
-    if(this.size < 50 && this.size > 20 ){
-      return "alert-warning";
-    } else if(this.size < 20){
-      return "alert-danger";
-    }else{
-      return "alert-primary";
+  get style() {
+    if (this.size < 50 && this.size > 20) {
+      return 'alert-warning';
+    } else if (this.size < 20) {
+      return 'alert-danger';
+    } else {
+      return 'alert-primary';
     }
   }
 
-  get size(){
+  get size() {
     return this.MAX - this.content.length;
   }
 
   @action
-  clear(){
-    this.content = "";
+  clear() {
+    this.content = '';
   }
 
   @action
-  save(){
+  save() {
     console.log(this.content);
   }
 
   @action
-  update(){
-
-  }
+  update() {}
 }
-
-
