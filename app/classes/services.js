@@ -3,7 +3,7 @@ import { filterBy } from '@ember/object/computed';
 export default class Services{
   services=[];
   promos=[];
-  enterValue = null;
+  @tracked enterValue = null;
   constructor(services, promo) {
     this.services = services;
     this.promos = promo;
