@@ -4,7 +4,7 @@ import { tracked } from '@glimmer/tracking';
 export default class Step1Controller extends Controller {
   dispoItems = [];
   includedItems = [];
-  @tracked disposItems_ = [];
+  @tracked dispoItems_ = [];
   @tracked includedItems_ = [];
 
   changeDispo(elements){
