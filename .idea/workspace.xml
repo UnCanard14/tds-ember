@@ -4,6 +4,7 @@
     <list default="true" id="bb88da3b-717e-4016-b2cc-3bf555713119" name="Default Changelist" comment="add : promotion fonction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/step1.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/step1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/step1.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/step1.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,10 @@
       <workItem from="1612964898080" duration="9927000" />
       <workItem from="1613028990566" duration="777000" />
       <workItem from="1613030153536" duration="7815000" />
-      <workItem from="1613405422084" duration="7187000" />
+      <workItem from="1613405422084" duration="9872000" />
+      <workItem from="1613426145871" duration="1509000" />
+      <workItem from="1613493623537" duration="1457000" />
+      <workItem from="1613560188603" duration="3725000" />
     </task>
     <task id="LOCAL-00001" summary="add : promotion fonction">
       <created>1612977515118</created>
