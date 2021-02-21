@@ -9,7 +9,7 @@ export default class ContactsAddRoute extends Route {
   @action save(data){
     let contact = this.store.createRecord('contact', data);
     contact.save().then(
-      ()=>this.transistionTo('contact');
+      ()=>this.transistionTo('contact')
     );
   }
 }

@@ -15,7 +15,9 @@
       <td>{{contact.email}}</td>
       <td>
         <LinkTo @route="contacts.update" @model={{ contact.id }} class="btn btn-primary btn-sm"><i class="far fa-trash_alt"></i>Modifier</LinkTo>
-        <button {{action "delete" contact}}class="btn btn-primary bt-sm">Supprimer</button>
+        <button {{action "delete" contact}}class="btn btn-danger btn-sm">
+          <i class="far fa-trash-alt"></i>
+        </button>
       </td>
     </tr>
   {{/each}}
