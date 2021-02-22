@@ -1,2 +1,7 @@
 {{page-title "Add"}}
+<label>Nom category</label>
+<Input @value={{@model.name}} placeholder="Entrez nom de category"/>
+
+<button {{ action "save" @model class="btn btn-primary"}}>Enregistrer</button>
+
 {{outlet}}
