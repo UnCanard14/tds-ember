@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bb88da3b-717e-4016-b2cc-3bf555713119" name="Default Changelist" comment="add : promotion fonction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/contacts/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/contacts/add.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/contacts.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/contacts.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ember-cli-build.js" beforeDir="false" afterPath="$PROJECT_DIR$/ember-cli-build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
