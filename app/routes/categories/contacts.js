@@ -5,4 +5,6 @@ export default class CategoriesContactsRoute extends Route {
   model(){
     return {};
   }
+
+
 }
