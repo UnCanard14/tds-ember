@@ -18,11 +18,10 @@
 -->
 
 <BsTab as |tab|>
-  <tab.pane @title="Tab 1">
-    <p>onlget1</p>
-  </tab.pane>
-  <tab.pane @title="Tab 2">
-    <p>onglet2</p>
-  </tab.pane>
+  {{#each @model as |categorie|}}
+    <tab.pane @title="{{categorie.name}}">
+      <p>{{categorie.name}}</p>
+    </tab.pane>
+  {{/each}}
 </BsTab>
 {{outlet}}
