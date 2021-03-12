@@ -1,0 +1,7 @@
+{{page-title "Index"}}
+
+<Input @type="text" @value={{this.login}}/>
+<Input @type="text" @value={{this.password}}/>
+<button {{action 'connexion' this.login this.password}}>Connexion</button>
+
+{{outlet}}
