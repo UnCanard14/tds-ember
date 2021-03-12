@@ -1,22 +1,4 @@
 {{page-title "Categories"}}
-
-<!--
-<table class="table table-striped table-dark">
-  <thead>
-  <tr>
-    <td>Nom Categorie</td>
-  </tr>
-  </thead>
-  <tbody>
-  {{#each @model as |categorie|}}
-    <tr>
-      <td>{{categorie.name}}</td>
-    </tr>
-  {{/each}}
-  </tbody>
-</table>
--->
-
 <BsTab as |tab|>
   {{#each @model as |categorie|}}
     <tab.pane @title="{{categorie.name}}">

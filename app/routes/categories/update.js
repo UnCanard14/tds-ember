@@ -6,8 +6,8 @@ export default class CategoriesUpdateRoute extends Route {
     this.render('categories.add');
   }
 
-  @action save(contact){
-    contact.save().then(()=>{
+  @action save(contact) {
+    contact.save().then(() => {
       this.transistionTo('category');
     });
   }
