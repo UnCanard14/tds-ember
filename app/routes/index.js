@@ -1,8 +1,8 @@
 import Route from '@ember/routing/route';
-import action from '@ember/object';
+import { action } from '@ember/object';
 import { inject as service } from '@ember/service';
 
-export default class IndexRoute extends Route {
+export default class IndexoRoute extends Route {
   @service userAuth;
 
   @action connexion(email, password) {
@@ -17,7 +17,7 @@ export default class IndexRoute extends Route {
           let user = users.firstObject;
           if (password == user.password) {
             this.userAuth.login(user);
-            //this.transition;
+            this.transitionTo('board');
           }
         }
       });
