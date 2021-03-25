@@ -1,0 +1,25 @@
+{{page-title "Add"}}
+<div class="ui segment">
+  <form class="ui form">
+    <h4 class="ui dividing header">Ajouter une section</h4>
+    <div class="field">
+      <label>Name</label>
+      <input type="text" name="first-name" placeholder="Nom Section">
+    </div>
+
+    {{#ui-dropdown class="fluid multiple selection" selected=section onChange=(action (mut section))}}
+      <i class="dropdown icon"></i>
+      <div class="default text">Select Products</div>
+      <div class="menu">
+        {{#each @model as |section|}}
+          <div data-value="{{section.id}}" class="item">
+            {{section.name}}
+          </div>
+        {{/each}}
+      </div>
+    {{/ui-dropdown}}
+
+  </form>
+</div>
+
+{{outlet}}

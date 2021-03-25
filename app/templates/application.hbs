@@ -1,5 +1,11 @@
 {{page-title "Tds"}}
 {{!-- The following component displays Ember's default welcome message. --}}
 {{!-- Feel free to remove this! --}}
+<div class="ui inverted menu">
+    <LinkTo @route="board" class="item" >Home</LinkTo>
+  <LinkTo class="ui button" @route="section" class="item">Section</LinkTo>
+</div>
 
+<div class="ui container">
 {{outlet}}
+</div>

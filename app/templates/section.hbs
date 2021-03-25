@@ -1,0 +1,21 @@
+{{page-title "Section"}}
+<h1>Section</h1>
+<LinkTo class="ui button" @route="section.add">Ajouter une section</LinkTo>
+<LinkTo class="ui button" @route="section.addProduct">Ajouter un produit</LinkTo>
+{{outlet}}
+
+<div class="ui grid ">
+  {{#each @model as |section|}}
+    <div class="ui ten wide column">
+      <div class="ui attached segment">
+        {{section.name}}
+        <LinkTo class="ui button mini" @route="section.delete" @model={{section.id}}>Supprimer une section</LinkTo>
+        <LinkTo class="ui button mini" @route="section.edit" @model={{section.id}}>Editer une section</LinkTo>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<ul>
+
+</ul>
