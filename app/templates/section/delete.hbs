@@ -1,4 +1,10 @@
 {{page-title "Delete"}}
-<h1>Supprimer une section</h1>
-{{@model.name}}
+<div class="ui segment">
+  <form class="ui form">
+    <h4 class="ui dividing header">Supprimer une section : {{@model.name}}</h4>
+    <LinkTo class="ui button" @route="section">Annuler</LinkTo>
+    <LinkTo class="ui red button" @route="section.addProduct">Valider supression</LinkTo>
+
+  </form>
+</div>
 {{outlet}}

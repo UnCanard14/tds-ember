@@ -1,11 +1,4 @@
 <div class="ui segment">
-  <span class="ui label">{{@model.employee.email}}</span>
-  <button class="ui black button" {{action "logout"}}>
-    Logout
-  </button>
-</div>
-
-<div class="ui segment">
   <h2>Orders</h2>
   <ul>
     {{#each @model.orders as |order|}}

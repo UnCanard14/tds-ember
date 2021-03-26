@@ -2,28 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb88da3b-717e-4016-b2cc-3bf555713119" name="Default Changelist" comment="add : promotion fonction">
-      <change afterPath="$PROJECT_DIR$/app/models/section.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/section/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/section/add.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/section/delete.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/section/edit.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/controllers/index-test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/models/section-test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/routes/section/add-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/controllers/application-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/routes/application-test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/orderdetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/orderdetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/board.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/logout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/logout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/sections.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/sections.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/application.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/application.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/board.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/board.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/sections.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/section.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/section.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/section/delete.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/section/delete.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/section/edit.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/section/edit.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +103,8 @@
       <workItem from="1616000925299" duration="2914000" />
       <workItem from="1616060805185" duration="13953000" />
       <workItem from="1616598473309" duration="2008000" />
-      <workItem from="1616673459408" duration="11126000" />
+      <workItem from="1616673459408" duration="13212000" />
+      <workItem from="1616779638147" duration="2296000" />
     </task>
     <task id="LOCAL-00001" summary="add : promotion fonction">
       <created>1612977515118</created>
