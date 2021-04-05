@@ -4,21 +4,11 @@
     <h4 class="ui dividing header">Ajouter une section</h4>
     <div class="field">
       <label>Name</label>
-      <input type="text" name="first-name" placeholder="Nom Section">
+      <Input type="text" name="first-name" placeholder="Nom Section" @value={{@model.name}}/>
     </div>
 
-    {{#ui-dropdown class="fluid multiple selection" selected=section onChange=(action (mut section))}}
-      <i class="dropdown icon"></i>
-      <div class="default text">Select Products</div>
-      <div class="menu">
-        {{#each @model as |section|}}
-          <div data-value="{{section.id}}" class="item">
-            {{section.name}}
-          </div>
-        {{/each}}
-      </div>
-    {{/ui-dropdown}}
-
+    <LinkTo class="ui button" @route="section">Annuler</LinkTo>
+    <button class="ui button" {{action 'addSection' @model}}>Ajouter</button>
   </form>
 </div>
 

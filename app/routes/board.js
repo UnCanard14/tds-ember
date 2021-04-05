@@ -9,13 +9,14 @@ export default class BoardRoute extends AbstractrouteRoute {
   model() {
     let user = this.userAuth.user;
     if (user) {
-      return RSVP.hash({
+      var retour = RSVP.hash({
         orders: this.store.query('order', {
           filter: { idEmployee: user.id },
           include: 'orderdetails',
         }),
         employee: user,
       });
+      return retour;
     }
   }
 

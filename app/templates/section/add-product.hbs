@@ -4,21 +4,23 @@
     <h4 class="ui dividing header">Ajouter un produit</h4>
     <div class="field">
       <label>Name</label>
-      <input type="text" name="first-name" placeholder="Nom Section">
+      <Input type="text" name="first-name" placeholder="Nom Section" @value={{@model.name}}/>
     </div>
 
-    {{#ui-dropdown class="fluid multiple selection" selected=section onChange=(action (mut section))}}
+    <UiDropdown class="selection" @selected={{@model.section}} @onChange={{fn (mut @model.section)}} as |execute mapper|>
+      <div class="default text">Packs</div>
       <i class="dropdown icon"></i>
-      <div class="default text">Select Products</div>
       <div class="menu">
-        {{#each @model as |section|}}
-          <div data-value="{{section.id}}" class="item">
+        {{#each @model.sections as |section|}}
+          <div data-value="{{map-value mapper section}}" class="item">
             {{section.name}}
           </div>
         {{/each}}
       </div>
-    {{/ui-dropdown}}
+    </UiDropdown>
 
+    <LinkTo class="ui button" @route="section">Annuler</LinkTo>
+    <button class="ui button"{{action 'addProduct' @model}}>Ajouter</button>
   </form>
 </div>
 {{outlet}}
