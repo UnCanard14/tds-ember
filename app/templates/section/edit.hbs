@@ -4,23 +4,26 @@
     <h4 class="ui dividing header">Editer une section</h4>
     <div class="field">
       <label>Name</label>
-      <input type="text" name="first-name" placeholder="Nom Section">
+      <Input type="text" name="first-name" placeholder="{{@model.name}}" @value={{@model.name}}/>
+    </div>
+<p>Ici que ca se passe</p>
+    {{outlet}}
+
+    <div class="ui segment">
+      <h2>Produits</h2>
+      <ul>
+        {{#each @model.products as |product|}}
+          <li>
+            <LinkTo @route="order" @model={{product.id}}>{{product.name}}></LinkTo>
+            <LinkTo class="ui button mini" @route="section.edit.edit" @model="{{product.id}}">Editer</LinkTo>
+            <LinkTo class="ui button mini" @route="section.edit.delete" @model="{{product.id}}">Supprimer</LinkTo>
+          </li>
+        {{/each}}
+      </ul>
     </div>
 
-    {{#ui-dropdown class="fluid multiple selection" selected=section onChange=(action (mut section))}}
-      <i class="dropdown icon"></i>
-      <div class="default text">Select Products</div>
-      <div class="menu">
-        {{#each @model as |section|}}
-          <div data-value="{{section.id}}" class="item">
-            {{section.name}}
-          </div>
-        {{/each}}
-      </div>
-    {{/ui-dropdown}}
     <LinkTo class="ui button" @route="section">Annuler</LinkTo>
-    <button class="ui button"{{action 'editSection'}}>Valider edition</button>
+    <button class="ui button"{{ action 'editSection' @model }}>Valider edition</button>
 
   </form>
 </div>
-{{outlet}}

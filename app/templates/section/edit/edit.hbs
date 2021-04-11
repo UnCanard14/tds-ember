@@ -1,7 +1,7 @@
-{{page-title "AddProduct"}}
+{{page-title "Edit"}}
 <div class="ui segment">
   <form class="ui form">
-    <h4 class="ui dividing header">Ajouter un produit</h4>
+    <h4 class="ui dividing header">Edition : {{@model.product.name}}</h4>
     <div class="field">
       <label>Name</label>
       <Input type="text" name="first-name" placeholder="Nom produits" @value={{@model.product.name}}/>
@@ -24,12 +24,12 @@
 
     <div class="field">
       <label>Section</label>
-      <UiDropdown class="selection" @onChange={{fn (mut @model.sections)}} as |execute mapper|>
+      <UiDropdown class="selection" @selected={{@model.product.section}} @onChange={{fn (mut @model.section)}} as |execute mapper|>
         <div class="default text">Section</div>
         <i class="dropdown icon"></i>
         <div class="menu">
           {{#each @model.sections as |section|}}
-            <div data-value="{{map-value mapper section.id}}" class="item">
+            <div data-value="{{map-value mapper section}}" class="item">
               {{section.name}}
             </div>
           {{/each}}
@@ -38,7 +38,7 @@
     </div>
 
     <LinkTo class="ui button" @route="section">Annuler</LinkTo>
-    <button class="ui button"{{action 'addProduct' @model.product}}>Ajouter</button>
+    <button class="ui button"{{action 'editProduct' @model.product}}>Valider</button>
   </form>
 </div>
 {{outlet}}

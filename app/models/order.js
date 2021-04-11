@@ -1,4 +1,5 @@
-import Model, { attr, hasMany } from '@ember-data/model';
+import Model, { attr, belongsTo, hasMany } from '@ember-data/model';
+
 
 export default class OrderModel extends Model {
   @attr('date') dateCreation;
@@ -7,8 +8,9 @@ export default class OrderModel extends Model {
     return this.orderdetails.length;
   }
   @attr('string') status;
-  // @attr('float') amount;
-  // @attr('float') toPay;
+  @belongsTo('user') user;
+  @attr('string') status;
+  @attr('number') amount;
   // @attr('int') itemsNumber;
-  // @attr('int') missingNumber;
+  // @attr('int ') missingNumber;
 }
